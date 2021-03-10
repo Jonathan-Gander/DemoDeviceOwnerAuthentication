@@ -8,6 +8,13 @@
 
 "done" = "OK";
 
+// Lock screen
+"lock.title" = "App démo";
+"lock.islocked" = "L'application est verrouillée par son propriétaire.";
+"lock.authentication" = "Aucun moyen d'identification (code, Face ID ou Touch ID) n'est configuré sur votre appareil";
+"lock.retry" = "Réessayer";
+"lock.reason" = "Utilisé pour verrouiller l'accès à l'application afin de protéger vos listes et vos mémoires.";
+
 // MainView
 "mv.title" = "App démo";
 "mv.placeholder" = "Ici le contenu de votre application.";

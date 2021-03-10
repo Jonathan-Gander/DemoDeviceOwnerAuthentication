@@ -8,6 +8,13 @@
 
 "done" = "Done";
 
+// Lock screen
+"lock.title" = "Demo App";
+"lock.islocked" = "App is locked by its owner.";
+"lock.authentication" = "No identification system (code, Face ID ou Touch ID) is enabled on your device.";
+"lock.retry" = "Retry";
+"lock.reason" = "Used to lock access to the app and protect your data.";
+
 // MainView
 "mv.title" = "Demo app";
 "mv.placeholder" = "Here is your app's content.";
