@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct DemoDeviceOwnerAuthenticationApp: App {
+    
+    @StateObject private var settingsManager = SettingsManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(settingsManager)
         }
     }
 }

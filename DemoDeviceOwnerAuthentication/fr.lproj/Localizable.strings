@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  DemoDeviceOwnerAuthentication
+
+  Created by Jonathan Gander on 10.03.21.
+  
+*/
+
+"done" = "OK";
+
+// MainView
+"mv.title" = "App démo";
+"mv.placeholder" = "Ici le contenu de votre application.";
+
+// SettingsView
+"sv.title" = "Réglages";
+"sv.securedapp" = "Verrouiller l'application";
+"sv.securedapp.footer.auth" = "En activant cette fonctionnalité, vous devrez garder un système d'authentification activé sur votre appareil (code, Face ID, Touch ID) pour accéder à l'application.";
+"sv.securedapp.footer.noauth" = "Vous devez avoir au moins un système d'authentification activé sur votre appareil (code, Face ID, Touch ID) pour utiliser cette fonctionnalité.";

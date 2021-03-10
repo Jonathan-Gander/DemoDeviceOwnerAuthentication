@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  DemoDeviceOwnerAuthentication
+
+  Created by Jonathan Gander on 10.03.21.
+  
+*/
+
+"done" = "Done";
+
+// MainView
+"mv.title" = "Demo app";
+"mv.placeholder" = "Here is your app's content.";
+
+// SettingsView
+"sv.title" = "Settings";
+"sv.securedapp" = "Lock app";
+"sv.securedapp.footer.auth" = "By activating this feature, you will need to keep an authentication system enabled on your device (passcode, Face ID, Touch ID) to access the application.";
+"sv.securedapp.footer.noauth" = "You must have at least one authentication system enabled on your device (passcode, Face ID, Touch ID) to use this feature.";
