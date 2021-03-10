@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33458A4325F950D8008A61ED /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33458A4225F950D8008A61ED /* SettingsManager.swift */; };
+		33458A4925F950E5008A61ED /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33458A4725F950E5008A61ED /* SettingsView.swift */; };
+		33458A4A25F950E5008A61ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33458A4825F950E5008A61ED /* ContentView.swift */; };
+		33458A5125F9512B008A61ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33458A5325F9512B008A61ED /* Localizable.strings */; };
 		33C6749025F92053003B74BB /* DemoDeviceOwnerAuthenticationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6748F25F92053003B74BB /* DemoDeviceOwnerAuthenticationApp.swift */; };
-		33C6749225F92054003B74BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6749125F92054003B74BB /* ContentView.swift */; };
 		33C6749425F92054003B74BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33C6749325F92054003B74BB /* Assets.xcassets */; };
 		33C6749725F92054003B74BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33C6749625F92054003B74BB /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33458A4225F950D8008A61ED /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		33458A4725F950E5008A61ED /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		33458A4825F950E5008A61ED /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		33458A5225F9512B008A61ED /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		33458A5525F9512E008A61ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		33C6748C25F92053003B74BB /* DemoDeviceOwnerAuthentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoDeviceOwnerAuthentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C6748F25F92053003B74BB /* DemoDeviceOwnerAuthenticationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDeviceOwnerAuthenticationApp.swift; sourceTree = "<group>"; };
-		33C6749125F92054003B74BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		33C6749325F92054003B74BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33C6749625F92054003B74BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		33C6749825F92054003B74BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +40,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33458A4125F950D8008A61ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33458A4225F950D8008A61ED /* SettingsManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33458A4525F950E0008A61ED /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		33458A4625F950E5008A61ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33458A4725F950E5008A61ED /* SettingsView.swift */,
+				33458A4825F950E5008A61ED /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		33C6748325F92053003B74BB = {
 			isa = PBXGroup;
 			children = (
@@ -53,8 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				33C6748F25F92053003B74BB /* DemoDeviceOwnerAuthenticationApp.swift */,
-				33C6749125F92054003B74BB /* ContentView.swift */,
+				33458A4625F950E5008A61ED /* Views */,
+				33458A4525F950E0008A61ED /* UI */,
+				33458A4125F950D8008A61ED /* Model */,
 				33C6749325F92054003B74BB /* Assets.xcassets */,
+				33458A5325F9512B008A61ED /* Localizable.strings */,
 				33C6749825F92054003B74BB /* Info.plist */,
 				33C6749525F92054003B74BB /* Preview Content */,
 			);
@@ -110,6 +144,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 33C6748325F92053003B74BB;
 			productRefGroup = 33C6748D25F92053003B74BB /* Products */;
@@ -127,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33C6749725F92054003B74BB /* Preview Assets.xcassets in Resources */,
+				33458A5125F9512B008A61ED /* Localizable.strings in Resources */,
 				33C6749425F92054003B74BB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,12 +174,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33C6749225F92054003B74BB /* ContentView.swift in Sources */,
+				33458A4925F950E5008A61ED /* SettingsView.swift in Sources */,
+				33458A4325F950D8008A61ED /* SettingsManager.swift in Sources */,
+				33458A4A25F950E5008A61ED /* ContentView.swift in Sources */,
 				33C6749025F92053003B74BB /* DemoDeviceOwnerAuthenticationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		33458A5325F9512B008A61ED /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33458A5225F9512B008A61ED /* fr */,
+				33458A5525F9512E008A61ED /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		33C6749925F92054003B74BB /* Debug */ = {
