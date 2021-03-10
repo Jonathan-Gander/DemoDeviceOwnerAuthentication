@@ -18,6 +18,7 @@
 // MainView
 "mv.title" = "App démo";
 "mv.placeholder" = "Ici le contenu de votre application.";
+"mv.instructions" = "Ouvrez les réglages pour activer/désactiver l'authentification.";
 
 // SettingsView
 "sv.title" = "Réglages";

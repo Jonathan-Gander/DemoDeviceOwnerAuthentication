@@ -14,24 +14,42 @@ struct ContentView: View {
         
         NavigationView {
             
-            Text("mv.placeholder")
+            VStack {
+                Text("mv.placeholder")
+                    .padding()
+                
+                Divider()
+                
+                HStack {
+                    
+                    Image(systemName: "exclamationmark.circle")
+                        .foregroundColor(.blue)
+                    
+                    Text("mv.instructions")
+                        
+                }
                 .padding()
                 
-                .navigationTitle("mv.title")
+                Divider()
                 
-                .toolbar {
-                    
-                    ToolbarItemGroup(placement: .navigationBarLeading) {
-                        // Settings button
-                        Button(action: { self.showSettings = true }) {
-                            Image(systemName: "slider.horizontal.3")
-                        }
-                        // Modal view for SettingsView
-                        .sheet(isPresented: $showSettings) {
-                            SettingsView(showView: $showSettings)
-                        }
+                Spacer()
+            }
+            
+            // Navigation bar settings
+            .navigationTitle("mv.title")
+            .toolbar {
+                
+                ToolbarItemGroup(placement: .navigationBarLeading) {
+                    // Settings button
+                    Button(action: { self.showSettings = true }) {
+                        Image(systemName: "slider.horizontal.3")
+                    }
+                    // Modal view for SettingsView
+                    .sheet(isPresented: $showSettings) {
+                        SettingsView(showView: $showSettings)
                     }
                 }
+            }
         }
     }
 }

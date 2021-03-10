@@ -18,6 +18,7 @@
 // MainView
 "mv.title" = "Demo app";
 "mv.placeholder" = "Here is your app's content.";
+"mv.instructions" = "Open Settings to enable/disable app authentication.";
 
 // SettingsView
 "sv.title" = "Settings";
