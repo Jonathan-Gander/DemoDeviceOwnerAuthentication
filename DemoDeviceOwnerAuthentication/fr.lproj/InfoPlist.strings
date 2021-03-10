@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  DemoDeviceOwnerAuthentication
+
+  Created by Jonathan Gander on 10.03.21.
+  
+*/
+
+"NSFaceIDUsageDescription" = "Utilisé pour verrouiller l'accès à l'application afin de protéger vos données.";

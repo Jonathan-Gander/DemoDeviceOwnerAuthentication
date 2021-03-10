@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  DemoDeviceOwnerAuthentication
+
+  Created by Jonathan Gander on 10.03.21.
+  
+*/
+
+
+"NSFaceIDUsageDescription" = "Used to lock access to the app and protect your data.";
