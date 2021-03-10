@@ -1,2 +1,4 @@
 # DemoDeviceOwnerAuthentication
-SwiftUI demo app for device owner authentication
+SwiftUI demo app for device owner authentication.
+
+WIP 🚧
