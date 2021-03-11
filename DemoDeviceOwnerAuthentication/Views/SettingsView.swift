@@ -13,7 +13,7 @@ struct SettingsView: View {
     
     @EnvironmentObject var settingsManager: SettingsManager
     
-    // For open/close view
+    // To open/close view
     @Binding var showView: Bool
     
     // Fields
@@ -28,9 +28,11 @@ struct SettingsView: View {
             List {
                 
                 Section(footer: Text(appHasAuthentication ? "sv.securedapp.footer.auth" : "sv.securedapp.footer.noauth")) {
+                    
                     Toggle("sv.securedapp", isOn: $fieldSecuredApp)
                         .disabled(!appHasAuthentication)
                         .onAppear {
+                            // Set current value to previously saved one
                             fieldSecuredApp = settingsManager.securedApp
                         }
                         .foregroundColor(appHasAuthentication ? .primary : .secondary)
@@ -51,6 +53,7 @@ struct SettingsView: View {
                     // Save all settings
                     settingsManager.securedApp = fieldSecuredApp
                     
+                    // And close view
                     self.showView = false
 
                 }) {
@@ -65,12 +68,8 @@ struct SettingsView: View {
         let laContext = LAContext()
         var error: NSError?
         
-        // Check if device has available authentication (code, Face ID, Touch ID)
-        if laContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
-            self.appHasAuthentication = true
-        } else {
-            self.appHasAuthentication = false
-        }
+        // Check if device has available authentication (passcode, Face ID, Touch ID)
+        self.appHasAuthentication = laContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error)
     }
 }
 

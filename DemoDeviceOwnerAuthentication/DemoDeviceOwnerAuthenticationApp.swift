@@ -51,9 +51,9 @@ struct DemoDeviceOwnerAuthenticationApp: App {
                         .padding()
                         
                         Divider()
-                        
                     }
                     
+                    // Add retry button
                     if canRetry {
                         Button("lock.retry") {
                             self.canRetry = false
@@ -61,11 +61,13 @@ struct DemoDeviceOwnerAuthenticationApp: App {
                         }
                         .padding()
                     }
+                    
                     Spacer()
                 }
+                // On start, try authenticate user
                 .onAppear(perform: authenticate)
             }
-            // If app is not secured or it's unlocked, can load main view (list of lists of memories)
+            // If app is not secured or it's unlocked, can load main content view
             else {
                 ContentView()
                     .environmentObject(settingsManager)
@@ -78,7 +80,7 @@ struct DemoDeviceOwnerAuthenticationApp: App {
         let laContext = LAContext()
         var error: NSError?
 
-        // Check if device has available authentication (code, Face ID, Touch ID)
+        // Check if device has available authentication (passcode, Face ID, Touch ID)
         if laContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
             
             self.noAuthentication = false

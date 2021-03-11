@@ -14,6 +14,7 @@ struct ContentView: View {
         
         NavigationView {
             
+            // Just a simple UI. Change it with your own app content
             VStack {
                 Text("mv.placeholder")
                     .padding()
@@ -24,6 +25,7 @@ struct ContentView: View {
                     
                     Image(systemName: "exclamationmark.circle")
                         .foregroundColor(.blue)
+                        .padding()
                     
                     Text("mv.instructions")
                         

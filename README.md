@@ -1,6 +1,6 @@
 # Demo app : DeviceOwnerAuthentication
 
-This simple demo app show you how to secure your iOS app using `DeviceOwnerAuthentication` using SwiftUI. It will ask for Face ID, Touch ID or passcode before starting app.
+This simple demo app shows you how to secure your iOS app using `DeviceOwnerAuthentication` with SwiftUI. It will ask for Face ID, Touch ID or passcode before starting app.
 
 A settings view let user enable or disable this feature.
 
